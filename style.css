@@ -270,4 +270,281 @@ body {
     z-index: -1;
 }
 
-/*test2*/
+/*スマホ用*/
+
+@media (max-width: 767px) {
+        body {
+        margin: 0;
+        max-width: 150%;
+        max-height: 200%;
+    }
+
+
+
+
+    #header {
+        position: relative;
+        width: 150%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+
+    }
+
+    .top {
+        position: relative;
+        margin-top: -3vw;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top2 {
+        width: 79%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+    }
+
+    .icon_box {
+        position: relative;
+        width: 30vw;
+        margin-top: -1vw;
+        background-color: rgb(255, 251, 250);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1.1;
+    }
+
+
+    #icon {
+        width: 100%;
+    }
+
+    .name {
+        font-size: 1.2vw;
+        color: #ff9a9a;
+        padding-left: 0.3vw;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .rink_box {
+        position: relative;
+        margin-top: -1vw;
+        width: 50vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+        flex: 4;
+    }
+
+    .rink_box1 {
+
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+    }
+
+    .rink_box2 {
+        position: relative;
+        width: 30vw;
+
+        display: flex;
+        align-items: center;    
+    }
+
+    .rink_icon {
+        width: 100%;
+        display: block;
+    }
+
+    .rink {
+        font-size: 2.2vw;
+        position: absolute;
+        top: 2vw;
+        left: 2.8vw;
+        color: #83b9ff;
+    }
+
+
+
+    .score {
+        position: relative;
+        width: 100%;
+        height: 8vw;
+        color: #ff7676;
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+    }
+
+    .score2 {
+        position: relative;
+        width: 40%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img_score{
+        position: absolute;
+        width: 41vw;
+
+        display: flex;
+        flex: 10;
+    }
+
+    .str_score {
+        font-size: 3vw;
+        position: absolute;
+        padding-left: 7vw;
+
+        display: flex;
+        flex: 10;
+    }
+
+    .data {
+        position: relative;
+        top: 1vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main1 {
+        width: 95%;
+        height: auto;
+        font-size: 1.9vw;
+        background-color: #00000054;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5%;
+    }
+
+    .h2_main1 {
+        width: 95%;
+        height: 5vw;
+        font-size: 1.5vw;
+        color: #505050;
+        background-color: #ffffff71;
+
+
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 10vw;
+    }
+
+    #h2_main1_1 {
+        padding-right: 5vw;
+    }
+
+    #h2_main1_2 {
+        padding-right: 30vw;
+        padding-left: 13.2vw;
+    }
+
+    .katudou_naiyou {
+        color: #ffef92;
+        border-right: 0.3vw dashed #7e7e7e;
+    }
+
+    .ru-ru {
+
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .ru-ru1 {
+        color: #ffb9b9;
+
+        display: flex;
+        justify-content: center;
+        gap: 1vw;
+    }
+
+    .main1_ul {
+        position: relative;
+        width: 100%;
+        font-size: 85%;
+
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .now_box {
+        position: relative;
+        top: 3vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main2 {
+        position: relative;
+        width: 80%;
+        height: auto;
+        font-size: 1.5vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10vw;
+    }
+
+    .douga1 {
+        position: relative;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .douga1 h2 {
+        color: #505050;
+    }
+
+    .douga1 h3 {
+        color: #0975a0;
+    }
+
+    .haikei {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+        z-index: -1;
+    }
+
+}
