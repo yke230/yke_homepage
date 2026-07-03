@@ -274,19 +274,23 @@ body {
 
 
 @media (max-width: 767px) {
-    body {
-        margin: 0;
-        max-width: 100%;
+
+    #header_div {
+        width: 100%;
+        height: 40vw;
+        overflow: hidden;
     }
 
 
     #header {
         position: relative;
-        width: 150%;
         left: 50%;
         transform: translateX(-50%);
+        width: 150%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
         z-index: 10;
-
     }
 
     .top {
@@ -305,19 +309,17 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 2vw;
     }
 
     .icon_box {
         position: relative;
-        width: 30vw;
+        width: 100%;
         margin-top: -1vw;
         background-color: rgb(255, 251, 250);
 
         display: flex;
         flex-direction: column;
         align-items: center;
-        flex: 1.1;
     }
 
 
@@ -337,25 +339,26 @@ body {
     .rink_box {
         position: relative;
         margin-top: -1vw;
-        width: 50vw;
+        width: 60%;
 
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1vw;
-        flex: 4;
+        flex-direction: column;
     }
 
     .rink_box1 {
+        position: relative;
+        width: 100%;
 
         display: flex;
         flex-direction: column;
-        gap: 1vw;
     }
 
     .rink_box2 {
         position: relative;
-        width: 30vw;
+        width: 80%;
+        height: auto;
 
         display: flex;
         align-items: center;    
@@ -367,10 +370,10 @@ body {
     }
 
     .rink {
-        font-size: 2.2vw;
+        font-size: 3.4vw;
         position: absolute;
-        top: 2vw;
-        left: 2.8vw;
+        top: 3vw;
+        left: 3vw;
         color: #83b9ff;
     }
 
@@ -380,13 +383,15 @@ body {
         position: relative;
         width: 100%;
         height: 8vw;
+        padding-left: 7%;
         color: #ff7676;
 
 
         display: flex;
         justify-content: center;
-        align-items: center;
-        gap: 3vw;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8vw;
     }
 
     .score2 {
