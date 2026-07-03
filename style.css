@@ -278,7 +278,7 @@ body {
         margin: 0;
         max-width: 150%;
         max-height: 200%;
-        background: rgb(255, 0, 0) !important;
+        background: rgb(255, 0, 0);
     }
 
 
