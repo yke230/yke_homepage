@@ -96,6 +96,25 @@ async function loadChannelData() {
 
 }
 
+/* CSS表示非表示切替ボタン */
+
+const link = document.querySelector('link[rel="stylesheet"]');
+const btn = document.getElementById("cssBtn");
+
+btn.onclick = () => {
+    if (link.disabled) {
+        link.disabled = false;
+        btn.textContent = "正体を見せる";
+    } else {
+        link.disabled = true;
+        btn.textContent = "正体を隠す";
+        alert("いくよ...？");
+    }
+};
+
+
+
+
 /* 実行 */
 loadLatestVideo();
 loadChannelData();
