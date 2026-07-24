@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yke230.github.io/yke_homepage/sitemap.xml
