@@ -104,11 +104,11 @@ const btn = document.getElementById("cssBtn");
 btn.onclick = () => {
     if (link.disabled) {
         link.disabled = false;
-        btn.textContent = "正体を見せる";
+        btn.textContent = "cssを復元する";
     } else {
         link.disabled = true;
-        btn.textContent = "正体を隠す";
-        alert("いくよ...？");
+        btn.textContent = "cssを排除する";
+        alert("いきます！");
     }
 };
 
