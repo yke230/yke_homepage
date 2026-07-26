@@ -21,7 +21,7 @@
     <meta name="twitter:description" content="ゆっけの公式サイトです！">
     <meta name="twitter:image" content="https://yke230.github.io/yke_homepage/image/ogp.png">
 
-    <link rel="stylesheet" href="style.css">
+    <link id="theme" rel="stylesheet" href="style.css">
     <script src="sclipt.js" defer></script>
 
 </head>
@@ -33,6 +33,15 @@
     </div>
     
     <div class="all">
+
+        <div class="counter">
+            <div class="counter2">
+                <p>総訪問者数</p>
+                <h2 id="visitorCount">読み込み中...</h2>
+            </div>
+        </div>
+
+
         <div class="top">
             <div class="top2">
 
@@ -173,7 +182,9 @@
         <div class="under_ber">
             <div class="under_ber2">
                 <p>サイト作成:ゆっけ　画像:ゆっけ</p>
-                <button id="cssBtn">cssを排除する</button>
+                <button id="themeBtn_0" class="themeBtn" data-theme="off">cssを排除する</button>
+                <button id="themeBtn_1" class="themeBtn" data-theme="style.css">デフォルト</button>
+                <!--<button id="themeBtn_2" class="themeBtn" data-theme="retro.css">過去に行く</button>-->
             </div>
         </div>
 

@@ -98,20 +98,54 @@ async function loadChannelData() {
 
 /* CSS表示非表示切替ボタン */
 
-const link = document.querySelector('link[rel="stylesheet"]');
-const btn = document.getElementById("cssBtn");
+const theme = document.getElementById("theme");
 
-btn.onclick = () => {
-    if (link.disabled) {
-        link.disabled = false;
-        btn.textContent = "cssを復元する";
+document.querySelectorAll(".themeBtn").forEach(btn => {
+
+    btn.onclick = () => {
+
+        const file = btn.dataset.theme;
+
+        if (file === "off") {
+            theme.disabled = true;
+            alert("いきます！");
+        } else {
+            theme.disabled = false;
+            theme.href = file;
+            alert("いきます！");
+        }
+
+    };
+
+});
+
+/* 訪問者数カウント */
+
+async function loadVisitorCount() {
+
+    const namespace = "yke230_homepage";
+    const key = "total";
+
+    let url;
+
+    if (sessionStorage.getItem("counted")) {
+
+        url = `https://api.countapi.xyz/get/${namespace}/${key}`;
+
     } else {
-        link.disabled = true;
-        btn.textContent = "cssを排除する";
-        alert("いきます！");
-    }
-};
 
+        url = `https://api.countapi.xyz/hit/${namespace}/${key}`;
+
+        sessionStorage.setItem("counted", "true");
+
+    }
+
+    const res = await fetch(url);
+    const data = await res.json();
+
+    document.getElementById("visitorCount").textContent = data.value;
+
+}
 
 
 
@@ -119,3 +153,4 @@ btn.onclick = () => {
 loadLatestVideo();
 loadChannelData();
 loadIntroVideo();
+loadVisitorCount();

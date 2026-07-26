@@ -25,9 +25,42 @@ body {
         z-index: 10;
     }
 
+
+
+    .counter {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-top: -9vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .counter2 {
+        position: relative;
+        width: 78%;
+        height: auto;
+        font-size: 1vw;
+        color: #ff6060;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: self-start;
+    }
+
+    #visitorCount {
+        margin-top: -1vw;
+        font-size: 1.2vw;
+        color: #ff6767;
+    }
+
     .top {
         position: relative;
-        margin-top: -3vw;
+        
         width: 100%;
 
         display: flex;
@@ -329,14 +362,40 @@ body {
         gap : 2vw;
     }
 
-    #cssBtn {
+    #themeBtn_0 {
         width: 8%;
         height: 98%;
         font-size: 80%;
         color: #ffeaea;
     }
 
-    #cssBtn {
+    #themeBtn_0 {
+      position: relative;
+      display: inline-block;
+      font-weight: bold;
+      padding: 7px 10px 10px 10px;
+      text-decoration: none;
+      color: #FFF;
+      background: #916c6c;
+      transition: .4s;
+    }
+
+    #themeBtn_0 > span {
+      border-bottom: solid 2px #FFF;
+    }
+
+    #themeBtn_0:hover {
+      background: #cfa2a2;
+    }
+
+    #themeBtn_1 {
+        width: 8%;
+        height: 98%;
+        font-size: 80%;
+        color: #ffeaea;
+    }
+
+    #themeBtn_1 {
       position: relative;
       display: inline-block;
       font-weight: bold;
@@ -347,12 +406,38 @@ body {
       transition: .4s;
     }
 
-    #cssBtn > span {
+    #themeBtn_1 > span {
       border-bottom: solid 2px #FFF;
     }
 
-    #cssBtn:hover {
+    #themeBtn_1:hover {
       background: #ffb889;
+    }
+
+    #themeBtn_2 {
+        width: 8%;
+        height: 98%;
+        font-size: 80%;
+        color: #ffeaea;
+    }
+
+    #themeBtn_2 {
+      position: relative;
+      display: inline-block;
+      font-weight: bold;
+      padding: 7px 10px 10px 10px;
+      text-decoration: none;
+      color: #FFF;
+      background: #003cff;
+      transition: .4s;
+    }
+
+    #themeBtn_2 > span {
+      border-bottom: solid 2px #FFF;
+    }
+
+    #themeBtn_2:hover {
+      background: #415eff;
     }
 
 
