@@ -25,8 +25,6 @@ body {
         z-index: 10;
     }
 
-
-
     .counter {
         position: relative;
         width: 100%;
@@ -363,9 +361,9 @@ body {
     }
 
     #themeBtn_0 {
-        width: 8%;
+        width: 9%;
         height: 98%;
-        font-size: 80%;
+        font-size: 73%;
         color: #ffeaea;
     }
 
@@ -478,11 +476,41 @@ body {
         z-index: 10;
     }
 
+    .counter {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-top: -12vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .counter2 {
+        position: relative;
+        width: 83%;
+        height: auto;
+        font-size: 2vw;
+        color: #ff6060;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: self-start;
+    }
+
+    #visitorCount {
+        margin-top: -2vw;
+        font-size: 2.2vw;
+        color: #ff6767;
+    }
+
     .top {
         position: relative;
-        margin-top: -3vw;
         width: 98%;
-
+        margin-top: -1vw;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -818,6 +846,84 @@ body {
 
     #cssBtn:hover {
       background: #ffb889;
+    }
+
+    #themeBtn_0 {
+        width: 18%;
+        height: 98%;
+        font-size: 73%;
+        color: #ffeaea;
+    }
+
+    #themeBtn_0 {
+      position: relative;
+      display: inline-block;
+      font-weight: bold;
+      padding: 7px 10px 10px 10px;
+      text-decoration: none;
+      color: #FFF;
+      background: #916c6c;
+      transition: .4s;
+    }
+
+    #themeBtn_0 > span {
+      border-bottom: solid 2px #FFF;
+    }
+
+    #themeBtn_0:hover {
+      background: #cfa2a2;
+    }
+
+    #themeBtn_1 {
+        width: 18%;
+        height: 98%;
+        font-size: 80%;
+        color: #ffeaea;
+    }
+
+    #themeBtn_1 {
+      position: relative;
+      display: inline-block;
+      font-weight: bold;
+      padding: 7px 10px 10px 10px;
+      text-decoration: none;
+      color: #FFF;
+      background: #dc8080;
+      transition: .4s;
+    }
+
+    #themeBtn_1 > span {
+      border-bottom: solid 2px #FFF;
+    }
+
+    #themeBtn_1:hover {
+      background: #ffb889;
+    }
+
+    #themeBtn_2 {
+        width: 18%;
+        height: 98%;
+        font-size: 80%;
+        color: #ffeaea;
+    }
+
+    #themeBtn_2 {
+      position: relative;
+      display: inline-block;
+      font-weight: bold;
+      padding: 7px 10px 10px 10px;
+      text-decoration: none;
+      color: #FFF;
+      background: #003cff;
+      transition: .4s;
+    }
+
+    #themeBtn_2 > span {
+      border-bottom: solid 2px #FFF;
+    }
+
+    #themeBtn_2:hover {
+      background: #415eff;
     }
 
     .haikei {
