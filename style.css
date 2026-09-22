@@ -25,30 +25,6 @@ body {
         z-index: 10;
     }
 
-    .counter {
-        position: relative;
-        width: 100%;
-        height: auto;
-        margin-top: -9vw;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .counter2 {
-        position: relative;
-        width: 78%;
-        height: auto;
-        font-size: 1vw;
-        color: #ff6060;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: self-start;
-    }
 
     #visitorCount {
         margin-top: -1vw;
@@ -476,31 +452,6 @@ body {
         z-index: 10;
     }
 
-    .counter {
-        position: relative;
-        width: 100%;
-        height: auto;
-        margin-top: -12vw;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .counter2 {
-        position: relative;
-        width: 83%;
-        height: auto;
-        font-size: 2vw;
-        color: #ff6060;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: self-start;
-    }
-
     #visitorCount {
         margin-top: -2vw;
         font-size: 2.2vw;
@@ -599,7 +550,7 @@ body {
 
     .score {
         position: relative;
-        width: 80%;
+        width: 40%;
         left: 2vw;
         margin-top: -14.5vw;
         color: #ff7676;
