@@ -880,9 +880,9 @@ body {
     .haikei {
         position: fixed;
         top: 0;
-        left: 0;
+        left: -100%;
 
-        width: 150%;
+        width: 200%;
         height: 150%;
 
         object-fit: cover;
